@@ -1,0 +1,53 @@
+h1 {
+    color: red;
+}
+p{
+    color: blue;
+}
+h2{
+    color: green;
+    text-align: center;
+    font-size: 50px;
+}
+/*Este é um comentario */
+
+/*
+Este
+é
+um
+comentario
+*/
+
+/* Classes e Ids */
+
+.p-texto{
+    color: lightgreen;
+}
+
+#titulo-app{
+    color:purple;
+    font-size:40px;
+
+}
+/* Especificidade */
+div p {
+    color: red;
+ }
+.p-dentro-da-div {
+    color: blue;
+}
+#p-super-especifico{
+    color: green;
+}
+/* Cores */
+
+.nome {
+    color: orange;
+}
+.hexa {
+    color:#d742f5;
+}
+.rgba {
+    color:rgba(237, 21, 194, .2); /* Mais usado quando queremos colocar transparencia nas letras*/
+    font-size: 40px;
+}
