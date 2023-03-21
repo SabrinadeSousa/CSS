@@ -31,7 +31,7 @@ comentario
 }
 /* Especificidade */
 div p {
-    color: red;
+    color: #000;
  }
 .p-dentro-da-div {
     color: blue;
@@ -50,4 +50,215 @@ div p {
 .rgba {
     color:rgba(237, 21, 194, .2); /* Mais usado quando queremos colocar transparencia nas letras*/
     font-size: 40px;
+}
+
+/* Backgrounds */
+
+.div-background {
+    background-image:url('img/ceu-predio.jpg');
+    height: 300px;
+}
+.titulo-background {
+    text-align: center;
+    background-color: #000;
+    color:#fff;
+}
+
+/* Fontes */
+
+.family {
+    color:#000;
+    font-size: 40px;
+}
+.family.serif{  /* nesse modelo ele fica bem mais especifico que o .family e o .serif*/
+    color: green;
+}
+
+.serif {
+    font-family:"times new roman";
+}
+
+.sans-serif {
+    font-family: arial;
+}
+
+.monospace {
+    font-family: "Courier New";
+}
+
+.italic {
+    font-style: italic;
+}
+
+.oblique {
+    font-style: oblique;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.variant{
+    font-variant: small-caps;
+}
+
+/* Box Model */
+
+body {
+    margin: 0;
+}
+
+.boxmodel {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+
+    /* Geral */
+    /* padding: 20px; */
+
+    /* Especifica */
+    /*padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 20;
+    padding-bottom: 5px; */
+
+    /* Especifico Agrupado */
+    /* padding: 30px 20px 5px 10px; */
+
+    /* Especifico agrupado 3 medidas - top, right -left, botton */
+    /* padding:30px 20px 5px; */
+
+    /* Especifico agrupado 2 medidas - top - botton,  right -left; */
+    padding: 30px 20px;
+    border: 3px solid #000;
+    border-width: 5px 10px 2px 10px;
+   /* border-left: 5px dotted blue;
+    border-right-style: double; */
+    border-width: 20px 10px;
+    border-radius: 15px;
+    /* margin: 50px;
+    margin: 5px 10px 10px 7px; */
+    margin: 100px;
+    /*display: none;  serve para esconder elementos da tela 
+    display: inline; fica tudo quebrado
+    display: inline-block; fica bloco ao lado do outro */
+    display: block; /* ele posciona o elemento por linha e preenche a tela 100% */
+}
+.paragrafo-box {
+    color: #000;
+    margin: 0;
+}
+.div-position {
+    width: 500px;
+    height: 500px;
+    background-color: red;
+    border-bottom: 2px dotted black;
+}
+
+/* Position */
+/* static - flow no HTML, não é alterado por top, left, right e bottom */
+/* relative - flow no HTML, ela é alterada pelo top, left, right e bottom */
+/* fixed - posso posicionar em qualquer lugar da tela, e é posicionada em relação ao HTML */
+/* absolute - posiciona em qualquer lugar, ela respeita o elemento antecesor */
+/* sticky - eesta no flow do HTML, porem ao passar o scroll ela funciona como fixed */
+
+.static {
+    position: static;
+}
+.relative {
+    position: relative;
+    background-color: blue;
+    top: 100px;
+    left: 50px;
+}
+.absolute {
+    position: absolute;
+    background-color: purple;
+    right: 0;
+    top: 0;
+}
+.mini-div {
+    height: 50px;
+    width: 50px;
+    top: 50px;
+    left: 100px;
+}
+.fixed {
+    position: fixed;
+    height: 200px;
+    background-color: orange;
+    bottom: 0;
+    right: 0;
+}
+.sticky {
+    position: sticky;
+    background-color: gray;
+    top: 0px;
+}
+
+/* Float */
+
+.container {
+    padding: 50px;
+}
+.div-float {
+    overflow: auto;
+}
+.img-float {
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+.float-right {
+    float: right;
+}
+.p-float {
+    color: #000;
+}
+.clear {
+    clear: both;
+}
+.pixel-1 {
+    background-color: purple;
+        width: 100px;
+        height: 100px;
+}
+.pixel-2 {
+    background-color: pink;
+        width: 500px;
+        height: 50px;
+}
+.pai-porcentagem {
+    width:500px;
+    height:500px;
+    background-color: #000;
+}
+.porcentagem-1 {
+    width: 50%;
+    height: 50%;
+    background-color: green;
+}
+.porcentagem-2 {
+    width: 50%;
+    height: 50%;
+    background-color: #000;
+}
+.pai-em {
+    font-size: 50px;
+}
+.em-1 {
+    width: .5em;
+    height: .5em;
+    background-color: purple;
+}
+html {
+    font-size:20px;
+}
+.rem-1 { /* tel relação com o elemento raiz HTML*/
+    width: 1rem;
+    height: 1rem;
+    background-color: blue;
+}
+.rem-2 {
+    font-size: 2rem;
 }
